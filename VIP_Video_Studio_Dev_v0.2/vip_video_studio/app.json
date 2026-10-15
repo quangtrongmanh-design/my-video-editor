@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "VIP Video Studio",
+    "slug": "vip-video-studio",
+    "version": "0.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.vipvideostudio",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Cho phép VIP Video Studio chọn video để chỉnh sửa."
+      }
+    },
+    "android": {
+      "package": "com.example.vipvideostudio",
+      "permissions": [
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Cho phép VIP Video Studio truy cập ảnh và video bạn chọn.",
+          "cameraPermission": "Cho phép VIP Video Studio quay video."
+        }
+      ]
+    ]
+  }
+}
